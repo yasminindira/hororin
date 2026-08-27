@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Horormin — Kumpulan cerita horor paling serem yang membuat bulu kuduk merinding. Video gallery cerita hantu, pesugihan, dan pengalaman mistis." />
+  <meta name="theme-color" content="#0a0a0a" />
+  <title>Horormin | Cerita Horor yang Serem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Ambient overlay -->
+  <div class="noise" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#beranda" class="logo">
+        <span class="logo-mark">H</span>
+        <span class="logo-text">Horormin</span>
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#beranda" class="nav-link active">Beranda</a>
+        <a href="#galeri" class="nav-link">Galeri</a>
+        <a href="#tentang" class="nav-link">Tentang</a>
+        <a href="#kontak" class="nav-link">Kontak</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="beranda">
+      <div class="hero-bg">
+        <img src="https://images.unsplash.com/photo-1509248966323-c3e57fcbf28f?auto=format&fit=crop&w=1920&q=80" alt="" loading="eager" />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow">Kumpulan Cerita Horor Asli</p>
+        <h1 class="hero-title">
+          <span>Horormin</span>
+        </h1>
+        <p class="hero-subtitle">
+          Masuki dunia gelap penuh misteri. Cerita horor yang bikin bulu kuduk berdiri —
+          dari rumah pesugihan hingga desa terpencil yang dihuni sosok tak kasat mata.
+        </p>
+        <div class="hero-cta">
+          <a href="#galeri" class="btn btn-primary">Tonton Sekarang</a>
+          <a href="#tentang" class="btn btn-ghost">Pelajari Lebih Lanjut</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="5">0</span>
+            <span class="stat-label">Video Horor</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="10">0</span>
+            <span class="stat-label">Juta+ Views</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="100">0</span>
+            <span class="stat-label">% Merinding</span>
+          </div>
+        </div>
+      </div>
+      <a href="#galeri" class="scroll-hint" aria-label="Scroll ke galeri">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- Galeri Carousel -->
+    <section class="gallery" id="galeri">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Video Gallery</p>
+          <h2 class="section-title">Cerita yang Membuatmu Takut</h2>
+          <p class="section-desc">Geser atau klik untuk menonton. Setiap video dipilih khusus karena tingkat seremnya.</p>
+        </div>
+
+        <div class="carousel-wrap">
+          <button class="carousel-btn prev" id="prevBtn" aria-label="Sebelumnya">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+          </button>
+
+          <div class="carousel" id="carousel">
+            <!-- Cards injected by JS -->
+          </div>
+
+          <button class="carousel-btn next" id="nextBtn" aria-label="Berikutnya">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+          </button>
+        </div>
+
+        <div class="carousel-dots" id="dots"></div>
+      </div>
+    </section>
+
+    <!-- Featured Grid -->
+    <section class="featured">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Pilihan Editor</p>
+          <h2 class="section-title">Paling Banyak Ditonton</h2>
+        </div>
+        <div class="grid" id="grid">
+          <!-- Injected by JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Tentang -->
+    <section class="about" id="tentang">
+      <div class="container about-inner">
+        <div class="about-text">
+          <p class="section-eyebrow">Tentang Kami</p>
+          <h2 class="section-title">Kenapa Horormin?</h2>
+          <p>
+            Horormin adalah ruang khusus bagi pecinta cerita horor Indonesia.
+            Kami mengumpulkan kisah-kisah nyata dan legenda yang paling merinding —
+            dari rumah bekas restoran, desa KKN yang sepi, hingga buku terkutuk.
+          </p>
+          <p>
+            Desain minimalis, fokus pada konten. Tanpa gangguan, hanya kamu dan
+            cerita yang siap menghantui malammu.
+          </p>
+          <ul class="about-list">
+            <li>Video horor terkurasi</li>
+            <li>Pengalaman nonton yang nyaman</li>
+            <li>Responsif di semua perangkat</li>
+            <li>Tema gelap yang menenangkan (atau menakutkan?)</li>
+          </ul>
+        </div>
+        <div class="about-visual">
+          <div class="about-card">
+            <img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=800&q=80" alt="Suasana gelap dan misterius" loading="lazy" />
+            <div class="about-card-overlay">
+              <span>Jangan nonton sendirian…</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Warning / CTA -->
+    <section class="warning">
+      <div class="container">
+        <div class="warning-box">
+          <h2>Peringatan</h2>
+          <p>
+            Konten di situs ini mengandung cerita horor yang dapat menyebabkan rasa takut,
+            cemas, atau sulit tidur. Nontonlah dengan bijak, sebaiknya tidak sendirian di malam hari.
+          </p>
+          <a href="#galeri" class="btn btn-primary">Saya Siap Merinding</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section class="contact" id="kontak">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Hubungi Kami</p>
+          <h2 class="section-title">Punya Cerita Horor?</h2>
+          <p class="section-desc">Kirim pengalamanmu. Mungkin suatu hari akan kami feature di Horormin.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama kamu" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="email@contoh.com" required />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="message">Cerita / Pesan</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ceritakan pengalaman horormu..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="#beranda" class="logo">
+          <span class="logo-mark">H</span>
+          <span class="logo-text">Horormin</span>
+        </a>
+        <p>Cerita horor yang bikin merinding. Dirancang dengan penuh ketakutan.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>Navigasi</h4>
+          <a href="#beranda">Beranda</a>
+          <a href="#galeri">Galeri</a>
+          <a href="#tentang">Tentang</a>
+          <a href="#kontak">Kontak</a>
+        </div>
+        <div>
+          <h4>Sumber Video</h4>
+          <a href="https://www.youtube.com/@nessiejudge" target="_blank" rel="noopener">Nessie Judge</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener">Nadia Omara</a>
+          <a href="https://www.youtube.com" target="_blank" rel="noopener">RJL 5</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>© 2026 Horormin. Semua video milik channel aslinya. Situs ini hanya agregator non-komersial.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Video -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose" aria-label="Tutup">&times;</button>
+      <h3 id="modalTitle" class="modal-title"></h3>
+      <div class="modal-video">
+        <iframe id="modalIframe" src="" title="Video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <p class="modal-channel" id="modalChannel"></p>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

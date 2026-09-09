@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p45midl1FbM",
+    "fallbackTitle": "Cerita Horor Malam #1",
+    "tag": "Kisah Nyata",
+    "fearLevel": 4
+  },
+  {
+    "id": "9Z6qLIK1dZ4",
+    "fallbackTitle": "Cerita Horor Malam #2",
+    "tag": "Penampakan",
+    "fearLevel": 5
+  },
+  {
+    "id": "RMJ4kvEf-ws",
+    "fallbackTitle": "Cerita Horor Malam #3",
+    "tag": "Misteri",
+    "fearLevel": 3
+  },
+  {
+    "id": "8pn3u5Zir_I",
+    "fallbackTitle": "Cerita Horor Malam #4",
+    "tag": "Rumah Angker",
+    "fearLevel": 5
+  },
+  {
+    "id": "iBc5WHGqwjE",
+    "fallbackTitle": "Cerita Horor Malam #5",
+    "tag": "Urban Legend",
+    "fearLevel": 4
+  }
+]

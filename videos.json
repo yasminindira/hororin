@@ -5,7 +5,9 @@
     "channel": "Nessie Judge",
     "description": "Kisah tentang buku-buku terkutuk paling berbahaya di dunia yang diyakini membawa petaka bagi pembacanya.",
     "thumbnail": "https://img.youtube.com/vi/p45midl1FbM/maxresdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=p45midl1FbM"
+    "url": "https://www.youtube.com/watch?v=p45midl1FbM",
+    "fearLevel": 4,
+    "category": "Misteri"
   },
   {
     "id": "9Z6qLIK1dZ4",
@@ -13,7 +15,9 @@
     "channel": "Hirotada Radifan",
     "description": "Cerita nyata yang penuh ketegangan tentang dilema kerja dan pengalaman yang tak terlupakan.",
     "thumbnail": "https://img.youtube.com/vi/9Z6qLIK1dZ4/maxresdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=9Z6qLIK1dZ4"
+    "url": "https://www.youtube.com/watch?v=9Z6qLIK1dZ4",
+    "fearLevel": 3,
+    "category": "Cerita Nyata"
   },
   {
     "id": "RMJ4kvEf-ws",
@@ -21,7 +25,9 @@
     "channel": "Nadia Omara",
     "description": "Teror mengerikan di rumah bekas restoran. Suara anjing, langkah di langit-langit, dan sosok misterius.",
     "thumbnail": "https://img.youtube.com/vi/RMJ4kvEf-ws/maxresdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=RMJ4kvEf-ws"
+    "url": "https://www.youtube.com/watch?v=RMJ4kvEf-ws",
+    "fearLevel": 5,
+    "category": "Rumah Angker"
   },
   {
     "id": "8pn3u5Zir_I",
@@ -29,7 +35,9 @@
     "channel": "RJL 5 - Fajar Aditya",
     "description": "Mahasiswa tinggal di rumah bekas pesugihan. Harga sewa murah, tapi terornya tak terduga.",
     "thumbnail": "https://img.youtube.com/vi/8pn3u5Zir_I/maxresdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=8pn3u5Zir_I"
+    "url": "https://www.youtube.com/watch?v=8pn3u5Zir_I",
+    "fearLevel": 4,
+    "category": "Rumah Angker"
   },
   {
     "id": "iBc5WHGqwjE",
@@ -37,6 +45,78 @@
     "channel": "Nessie Judge",
     "description": "Pengalaman KKN di desa terpencil Aceh yang hanya dihuni 15 orang. Malam hari penuh misteri.",
     "thumbnail": "https://img.youtube.com/vi/iBc5WHGqwjE/maxresdefault.jpg",
-    "url": "https://www.youtube.com/watch?v=iBc5WHGqwjE"
+    "url": "https://www.youtube.com/watch?v=iBc5WHGqwjE",
+    "fearLevel": 5,
+    "category": "KKN"
+  },
+  {
+    "id": "2qhlafh3Wws",
+    "title": "RAMALAN SI FITRI | #NERROR CERITA HOROR #115",
+    "channel": "Nessie Judge",
+    "description": "Cerita horor tentang ramalan yang berubah menjadi kenyataan menakutkan.",
+    "thumbnail": "https://img.youtube.com/vi/2qhlafh3Wws/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=2qhlafh3Wws",
+    "fearLevel": 4,
+    "category": "Cerita Nyata"
+  },
+  {
+    "id": "vhgQedc-EKQ",
+    "title": "KISAH HOROR RUMAH & KELUARGA",
+    "channel": "Nessie Judge",
+    "description": "Kumpulan cerita horor rumah dan keluarga yang bikin merinding.",
+    "thumbnail": "https://img.youtube.com/vi/vhgQedc-EKQ/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=vhgQedc-EKQ",
+    "fearLevel": 4,
+    "category": "Rumah Angker"
+  },
+  {
+    "id": "NPBjou25heM",
+    "title": "PELET LUNAR | #NERROR CERITA HOROR #116",
+    "channel": "Nessie Judge",
+    "description": "Kisah pelet dan teror yang datang tanpa diduga.",
+    "thumbnail": "https://img.youtube.com/vi/NPBjou25heM/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=NPBjou25heM",
+    "fearLevel": 5,
+    "category": "Misteri"
+  },
+  {
+    "id": "YR7svahi1sQ",
+    "title": "KASUS MENGERIKAN DUKUN TETE JAGO!",
+    "channel": "Nessie Judge",
+    "description": "Kasus dukun yang berujung pada kejadian mengerikan.",
+    "thumbnail": "https://img.youtube.com/vi/YR7svahi1sQ/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=YR7svahi1sQ",
+    "fearLevel": 5,
+    "category": "Misteri"
+  },
+  {
+    "id": "IP1cazX-O5s",
+    "title": "MISTERI PULAU MADURA!",
+    "channel": "Nessie Judge",
+    "description": "Misteri dan cerita horor dari Pulau Madura.",
+    "thumbnail": "https://img.youtube.com/vi/IP1cazX-O5s/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=IP1cazX-O5s",
+    "fearLevel": 3,
+    "category": "Urban Legend"
+  },
+  {
+    "id": "dl4GW-nvMsI",
+    "title": "PEMUJA SETAN SELAMAT EKSEKUSI",
+    "channel": "Nessie Judge",
+    "description": "Kisah pemuja setan yang selamat dari eksekusi secara misterius.",
+    "thumbnail": "https://img.youtube.com/vi/dl4GW-nvMsI/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=dl4GW-nvMsI",
+    "fearLevel": 5,
+    "category": "Misteri"
+  },
+  {
+    "id": "qO2AlWd15mQ",
+    "title": "FILM HOROR TERBAIK 2026",
+    "channel": "Nessie Judge",
+    "description": "Review dan pembahasan film horor terbaik tahun 2026.",
+    "thumbnail": "https://img.youtube.com/vi/qO2AlWd15mQ/maxresdefault.jpg",
+    "url": "https://www.youtube.com/watch?v=qO2AlWd15mQ",
+    "fearLevel": 3,
+    "category": "Review"
   }
 ]

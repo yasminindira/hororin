@@ -4,196 +4,116 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Horormin — Arsip Video Horor</title>
-<meta name="description" content="Horormin, arsip video cerita horor paling serem. Tonton kalau berani.">
-
+<meta name="description" content="Horormin, arsip video cerita horor. Tonton kalau berani.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Special+Elite&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-<link rel="stylesheet" href="css/style.css">
-
-<!-- Favicon: dripping "H" monogram badge, matching the site's brand -->
-<link rel="icon" type="image/svg+xml" href="favicon.svg">
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png">
-<link rel="shortcut icon" href="favicon.ico">
-<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<meta name="theme-color" content="#0a0807">
+<link href="https://fonts.googleapis.com/css2?family=Butcherman&family=Special+Elite&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 </head>
 <body>
-
-<!-- grain / noise overlay, purely decorative, CSS+SVG only -->
 <div class="grain" aria-hidden="true"></div>
 
-<a class="skip-link" href="#konten">Langsung ke konten</a>
+<!-- WELCOME SCREEN -->
+<div class="welcome" id="welcome">
+  <div class="welcome__inner">
+    <p class="eyebrow">Arsip Malam · Sejak 2019</p>
+    <h1 class="welcome__title">HORORMIN</h1>
+    <p>Selamat datang di arsip cerita horor. Matikan lampu. Pasang headset. Jangan nonton sendirian.</p>
+    <p class="welcome__note">Konten untuk hiburan. Disarankan usia 13+.</p>
+    <button class="btn btn--primary" id="enterBtn">Saya Berani Masuk</button>
+  </div>
+</div>
 
 <header class="nav" id="navbar">
   <div class="nav__inner">
-    <a href="#hero" class="nav__logo" aria-label="Horormin — beranda">
-      <span class="nav__logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="20" height="20"><path fill="currentColor" d="M16 2C10 12 6 17 6 22a10 10 0 0 0 20 0c0-5-4-10-10-20Z"/></svg>
-      </span>
-      Horormin
-    </a>
-    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Buka menu">
-      <span></span><span></span><span></span>
-    </button>
-    <nav class="nav__menu" id="navMenu">
+    <a href="#hero" class="nav__logo">Horormin</a>
+    <nav class="nav__menu">
       <a href="#hero">Beranda</a>
       <a href="#galeri">Video</a>
       <a href="#tentang">Tentang</a>
       <a href="#gabung">Gabung</a>
     </nav>
+    <button id="jumpscareToggle" class="btn btn--ghost btn--small">Jumpscare: OFF</button>
   </div>
 </header>
 
 <main id="konten">
-
-  <!-- HERO -->
   <section class="hero" id="hero">
     <div class="hero__inner">
       <p class="eyebrow">Arsip malam · sejak 2019</p>
-      <h1 class="hero__title" data-text="HORORMIN">HORORMIN</h1>
-      <p class="hero__tagline">Kumpulan cerita horor yang katanya nyata. Kami cuma memutar rekamannya — sisanya urusanmu dengan yang nonton balik.</p>
+      <h1 class="hero__title">HORORMIN</h1>
+      <p class="hero__tagline">Kumpulan cerita horor yang katanya nyata. Kami cuma memutar rekamannya — sisanya urusanmu.</p>
       <div class="hero__actions">
         <a href="#galeri" class="btn btn--primary">Mulai Tonton</a>
         <a href="#tentang" class="btn btn--ghost">Apa itu Horormin?</a>
       </div>
     </div>
-
-    <div class="ticker" aria-live="polite">
-      <span class="ticker__dot" aria-hidden="true"></span>
-      <span class="ticker__label">Sedang menonton sendirian malam ini:</span>
-      <span class="ticker__count" id="tickerCount">1.284</span>
+    <div class="ticker">
+      <span>Sedang menonton sendirian malam ini:</span>
+      <span class="ticker__count" id="tickerCount">1284</span>
     </div>
-
-    <a href="#galeri" class="hero__scroll" aria-label="Gulir ke bawah">
-      <span></span>
-    </a>
   </section>
 
-  <!-- HAZARD DIVIDER 1 -->
-  <div class="hazard" role="presentation">
-    <div class="hazard__track">
-      <span>JANGAN TONTON SENDIRIAN&nbsp;&nbsp;&#9888;&nbsp;&nbsp;MATIKAN LAMPU&nbsp;&nbsp;&#9888;&nbsp;&nbsp;PAKAI HEADSET&nbsp;&nbsp;&#9888;&nbsp;&nbsp;</span>
-      <span aria-hidden="true">JANGAN TONTON SENDIRIAN&nbsp;&nbsp;&#9888;&nbsp;&nbsp;MATIKAN LAMPU&nbsp;&nbsp;&#9888;&nbsp;&nbsp;PAKAI HEADSET&nbsp;&nbsp;&#9888;&nbsp;&nbsp;</span>
-    </div>
-  </div>
-
-  <!-- ABOUT / DOSSIER -->
   <section class="about" id="tentang">
     <div class="about__inner">
       <p class="eyebrow">Berkas #001</p>
-      <h2 class="section-title">Tentang Horormin</h2>
-      <div class="about__grid">
-        <div class="about__text">
-          <p>Horormin bukan channel biasa. Kami mengumpulkan cerita horor dari pelosok Indonesia — rumah kosong, jalan tol tengah malam, kos-kosan lantai tiga yang kamarnya cuma ada dua — lalu memutarnya ulang untuk kamu yang masih berani menekan tombol <em>play</em>.</p>
-          <p>Setiap video punya "tingkat serem" versi kami. Bukan sains, cuma insting orang yang sudah nonton semuanya sambil gemetar.</p>
-        </div>
-        <dl class="about__stats">
-          <div class="about__stat">
-            <dt>Video diarsipkan</dt>
-            <dd>127+</dd>
-          </div>
-          <div class="about__stat">
-            <dt>Laporan tidak bisa tidur</dt>
-            <dd>9.4rb</dd>
-          </div>
-          <div class="about__stat">
-            <dt>Lampu masih nyala</dt>
-            <dd>selalu</dd>
-          </div>
-        </dl>
+      <h2>Tentang Horormin</h2>
+      <p>Horormin mengumpulkan cerita horor dari pelosok Indonesia lalu memutarnya ulang untuk kamu yang masih berani menekan tombol play.</p>
+      <div class="about__stats">
+        <div><strong id="videoCount">12</strong><br>Video diarsipkan</div>
+        <div><strong>9.4rb</strong><br>Laporan tidak bisa tidur</div>
+        <div><strong>selalu</strong><br>Lampu masih nyala</div>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY / CAROUSEL -->
   <section class="gallery" id="galeri">
     <div class="gallery__head">
       <p class="eyebrow">Berkas #002</p>
-      <h2 class="section-title">Pilih Ketakutanmu</h2>
-      <p class="gallery__sub">Geser untuk menjelajah arsip. Klik salah satu kalau sudah siap.</p>
+      <h2>Pilih Ketakutanmu</h2>
+      <p>Geser atau klik video. Favorit disimpan di perangkatmu.</p>
     </div>
-
-    <div class="carousel" id="carousel">
-      <button class="carousel__nav carousel__nav--prev" id="prevBtn" aria-label="Video sebelumnya">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M15 4l-8 8 8 8 1.4-1.4L9.8 12l6.6-6.6z"/></svg>
-      </button>
-
-      <ul class="carousel__track" id="carouselTrack">
-        <!-- cards injected by js/main.js -->
-      </ul>
-
-      <button class="carousel__nav carousel__nav--next" id="nextBtn" aria-label="Video berikutnya">
-        <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M9 4l8 8-8 8-1.4-1.4L14.2 12 7.6 5.4z"/></svg>
-      </button>
-    </div>
-
-    <div class="carousel__dots" id="carouselDots" role="tablist" aria-label="Navigasi video"></div>
+    <div class="carousel" id="carousel"></div>
   </section>
 
-  <!-- HAZARD DIVIDER 2 -->
-  <div class="hazard hazard--alt" role="presentation">
-    <div class="hazard__track">
-      <span>SUDAH SIAP MENTAL?&nbsp;&nbsp;&#9888;&nbsp;&nbsp;TIDAK ADA JUMPSCARE PALSU&nbsp;&nbsp;&#9888;&nbsp;&nbsp;VOLUME SEDANG DISARANKAN&nbsp;&nbsp;&#9888;&nbsp;&nbsp;</span>
-      <span aria-hidden="true">SUDAH SIAP MENTAL?&nbsp;&nbsp;&#9888;&nbsp;&nbsp;TIDAK ADA JUMPSCARE PALSU&nbsp;&nbsp;&#9888;&nbsp;&nbsp;VOLUME SEDANG DISARANKAN&nbsp;&nbsp;&#9888;&nbsp;&nbsp;</span>
-    </div>
-  </div>
-
-  <!-- CTA / NEWSLETTER -->
   <section class="cta" id="gabung">
     <div class="cta__inner">
       <p class="eyebrow">Berkas #003</p>
-      <h2 class="section-title">Gabung Klub Malam</h2>
-      <p class="cta__text">Satu email per minggu. Satu cerita baru. Tidak ada spam — cuma teror yang terjadwal.</p>
-
-      <form class="cta__form" id="joinForm" novalidate>
-        <label class="sr-only" for="emailInput">Alamat email</label>
-        <input type="email" id="emailInput" name="email" placeholder="emailmu@contoh.com" required>
+      <h2>Gabung Klub Malam</h2>
+      <p>Satu email per minggu. Satu cerita baru.</p>
+      <form id="joinForm">
+        <input type="email" placeholder="emailmu@contoh.com" required>
         <button type="submit" class="btn btn--primary">Daftar Sekarang</button>
       </form>
-      <p class="cta__msg" id="ctaMsg" role="status" aria-live="polite"></p>
-      <p class="cta__fine">Kamu bisa keluar kapan saja. Kami tidak bisa menjanjikan mimpimu akan tetap tenang.</p>
     </div>
   </section>
-
 </main>
 
 <footer class="footer">
   <div class="footer__inner">
-    <a href="#hero" class="nav__logo footer__logo">
-      <span class="nav__logo-mark" aria-hidden="true">
-        <svg viewBox="0 0 32 32" width="18" height="18"><path fill="currentColor" d="M16 2C10 12 6 17 6 22a10 10 0 0 0 20 0c0-5-4-10-10-20Z"/></svg>
-      </span>
-      Horormin
-    </a>
-    <nav class="footer__links" aria-label="Tautan situs">
+    <a href="#hero">Horormin</a>
+    <nav>
       <a href="#hero">Beranda</a>
       <a href="#galeri">Video</a>
       <a href="#tentang">Tentang</a>
-      <a href="#gabung">Gabung</a>
     </nav>
-    <ul class="footer__social" aria-label="Sosial media">
-      <li><a href="#">YouTube</a></li>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">TikTok</a></li>
-    </ul>
+    <div class="footer__social">
+      <a href="https://instagram.com/ysmindr.d" target="_blank" rel="noopener">Instagram @ysmindr.d</a>
+    </div>
   </div>
-  <p class="footer__fine">© <span id="year"></span> Horormin. Semua cerita didramatisasi untuk hiburan. Jangan lupa kunci pintu.</p>
+  <p>© <span id="year"></span> Horormin. Untuk hiburan. Jangan lupa kunci pintu.</p>
 </footer>
 
-<!-- LIGHTBOX MODAL -->
-<div class="lightbox" id="lightbox" aria-hidden="true">
+<!-- Modal -->
+<div class="lightbox" id="lightbox" hidden>
   <div class="lightbox__backdrop" id="lightboxBackdrop"></div>
-  <div class="lightbox__panel" role="dialog" aria-modal="true" aria-label="Pemutar video">
-    <button class="lightbox__close" id="lightboxClose" aria-label="Tutup pemutar">
-      <svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6.4 5L5 6.4l5.6 5.6L5 17.6 6.4 19l5.6-5.6 5.6 5.6 1.4-1.4-5.6-5.6L19 6.4 17.6 5 12 10.6z"/></svg>
-    </button>
-    <div class="lightbox__frame" id="lightboxFrame"></div>
+  <div class="lightbox__panel">
+    <button class="lightbox__close" id="lightboxClose">×</button>
+    <div id="lightboxFrame"></div>
   </div>
 </div>
 
-<script src="js/main.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
